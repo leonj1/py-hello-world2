@@ -10,7 +10,7 @@ class Handler(http.server.SimpleHTTPRequestHandler):
         self.wfile.write(b'Hello world Jose Leon')
 
 
-httpd = socketserver.TCPServer(('', 8002), Handler)
+httpd = socketserver.TCPServer(('', 3000), Handler)
 httpd.serve_forever()
 
 
